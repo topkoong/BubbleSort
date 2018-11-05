@@ -31,13 +31,9 @@ function mergeSort(array) {
     //base case: check if arr.length is less than two, if so, then return the array
     if (array.length === 1) return array;
     //create the center index
-    // const left = split(array)[0];
-    // const right= split(array)[1];
-    console.log(split(array));
+    const left = split(array)[0];
+    const right= split(array)[1];
     const sortedLeft = mergeSort(left);
     const sortedRight = mergeSort(right);
     return merge(sortedLeft, sortedRight);
 }
-
-let a = [97,0,22,-30];
-console.log(mergeSort(a));
